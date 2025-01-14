@@ -1,0 +1,222 @@
+{
+    "scenarios": [
+        {
+            "scenario_id": 1,
+            "scenario_name": "Cardiac Arrest",
+            "introduction": "Cardiac arrest is a sudden loss of heart function, breathing, and consciousness.",
+            "symptoms & causes": [
+                "sudden","collapse",
+                "no",
+                "pulse",
+                "no","breathing",
+                "fainting",
+                "shortness" ,"breath",
+                "chest","discomfort",
+                "weakness",
+                "palpitations"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Call 911 or local emergency services."},
+                {"step_number": 2, "step_description": "Perform CPR."},
+                {"step_number": 3, "step_description": "Push hard and fast on the person's chest."},
+                {"step_number": 4, "step_description": "100 to 120 pushes a minute."},
+                {"step_number": 5, "step_description": "Deliver rescue breaths after every 30 compressions."},
+                {"step_number": 6, "step_description": "Allow the chest to rise completely between compressions."},
+                {"step_number": 7, "step_description": "Keep doing this until an AED is available or emergency workers arrive."}
+            ]
+        },
+        {
+            "scenario_id": 2,
+            "scenario_name": "Choking",
+            "introduction": "Choking occurs when a foreign object becomes lodged in the throat or windpipe, blocking the flow of air.",
+            "symptoms & causes": [
+                "inability to talk",
+                "difficulty breathing",
+                "noisy breathing",
+                "inability to cough",
+                "skin, lips, and nails turning blue",
+                "loss of consciousness"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Ask the person if they are choking."},
+                {"step_number": 2, "step_description": "If they nod yes, perform the Heimlich maneuver."},
+                {"step_number": 3, "step_description": "Stand behind the person and wrap your arms around their waist."},
+                {"step_number": 4, "step_description": "Make a fist with one hand and place it just above the person’s navel."},
+                {"step_number": 5, "step_description": "Grasp the fist with your other hand and perform quick, upward thrusts."},
+                {"step_number": 6, "step_description": "Continue until the object is expelled or the person becomes unconscious."},
+                {"step_number": 7, "step_description": "If the person becomes unconscious, begin CPR."}
+            ]
+        },
+        {
+            "scenario_id": 3,
+            "scenario_name": "Allergic Reaction",
+            "introduction": "An allergic reaction occurs when the immune system overreacts to a harmless substance known as an allergen.",
+            "symptoms & causes": [
+                "hives",
+                "itching",
+                "swelling",
+                "difficulty breathing",
+                "wheezing",
+                "rash",
+                "nausea",
+                "vomiting",
+                "diarrhea",
+                "dizziness",
+                "loss of consciousness"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Remove the person from the allergen if possible."},
+                {"step_number": 2, "step_description": "Call 911 or local emergency services if the reaction is severe."},
+                {"step_number": 3, "step_description": "Assist the person in using an epinephrine auto-injector if available."},
+                {"step_number": 4, "step_description": "Have the person lie still on their back."},
+                {"step_number": 5, "step_description": "Loosen tight clothing and cover them with a blanket."},
+                {"step_number": 6, "step_description": "If there is vomiting or bleeding from the mouth, turn the person on their side to prevent choking."},
+                {"step_number": 7, "step_description": "Begin CPR if there are no signs of breathing or circulation until emergency help arrives."}
+            ]
+        },
+        {
+            "scenario_id": 4,
+            "scenario_name": "Stroke",
+            "introduction": "A stroke occurs when the blood supply to part of your brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients.",
+            "symptoms & causes": [
+                "trouble speaking",
+                "paralysis or numbness of the face",
+                "arm or leg numbness",
+                "trouble seeing in one or both eyes",
+                "headache",
+                "difficulty walking"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Call 911 or local emergency services immediately."},
+                {"step_number": 2, "step_description": "Check if the person is breathing and has a pulse."},
+                {"step_number": 3, "step_description": "If the person is unconscious but breathing, place them in the recovery position."},
+                {"step_number": 4, "step_description": "Do not give them any food or drink."},
+                {"step_number": 5, "step_description": "Monitor their condition until emergency services arrive."}
+            ]
+        },
+        {
+            "scenario_id": 5,
+            "scenario_name": "Seizure",
+            "introduction": "A seizure is a sudden, uncontrolled electrical disturbance in the brain. It can cause changes in your behavior, movements, feelings, and levels of consciousness.",
+            "symptoms & causes": [
+                "temporary confusion",
+                "a staring spell",
+                "uncontrollable jerking movements",
+                "loss of consciousness",
+                "cognitive or emotional symptoms"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Stay with the person and start timing the seizure."},
+                {"step_number": 2, "step_description": "Keep the person safe by moving them away from harmful objects."},
+                {"step_number": 3, "step_description": "Turn the person onto their side to help them breathe."},
+                {"step_number": 4, "step_description": "Place something soft under their head."},
+                {"step_number": 5, "step_description": "Do not put anything in their mouth."},
+                {"step_number": 6, "step_description": "Call 911 if the seizure lasts more than 5 minutes or if another seizure starts soon after the first."}
+            ]
+        },
+        {
+            "scenario_id": 6,
+            "scenario_name": "Burns",
+            "introduction": "Burns are tissue damage caused by heat, overexposure to the sun, or other radiation, chemical or electrical contact.",
+            "symptoms & causes": [
+                "red, blistered skin",
+                "pain",
+                "swelling",
+                "peeling skin",
+                "white or charred skin"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Cool the burn with running cool (not cold) water for at least 10 minutes."},
+                {"step_number": 2, "step_description": "Remove any clothing or jewelry near the burn site."},
+                {"step_number": 3, "step_description": "Cover the burn with a sterile, non-adhesive bandage or clean cloth."},
+                {"step_number": 4, "step_description": "Do not apply creams, oils, or ice to the burn."},
+                {"step_number": 5, "step_description": "Seek medical attention if the burn is severe or covers a large area of the body."}
+            ]
+        },
+        {
+            "scenario_id": 7,
+            "scenario_name": "Poisoning",
+            "introduction": "Poisoning occurs when a person is exposed to a substance that can cause illness or death.",
+            "symptoms & causes": [
+                "nausea",
+                "vomiting",
+                "diarrhea",
+                "difficulty breathing",
+                "confusion",
+                "seizures",
+                "loss of consciousness"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Call 911 or your local poison control center immediately."},
+                {"step_number": 2, "step_description": "Try to determine what poison was taken, when, and how much."},
+                {"step_number": 3, "step_description": "Do not induce vomiting unless directed by a medical professional."},
+                {"step_number": 4, "step_description": "If the person is unconscious but breathing, place them in the recovery position."},
+                {"step_number": 5, "step_description": "Monitor their condition until help arrives."}
+            ]
+        },
+        {
+            "scenario_id": 8,
+            "scenario_name": "Heat Stroke",
+            "introduction": "Heat stroke is a condition caused by your body overheating, usually as a result of prolonged exposure to or physical exertion in high temperatures.",
+            "symptoms & causes": [
+                "high body temperature",
+                "altered mental state",
+                "nausea",
+                "flushed skin",
+                "rapid breathing",
+                "racing heart rate",
+                "headache"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Call 911 or local emergency services immediately."},
+                {"step_number": 2, "step_description": "Move the person to a cooler environment."},
+                {"step_number": 3, "step_description": "Remove excess clothing."},
+                {"step_number": 4, "step_description": "Cool the person with whatever means available, such as cool water, fans, or ice packs."},
+                {"step_number": 5, "step_description": "Monitor their condition until help arrives."}
+            ]
+        },
+        {
+            "scenario_id": 9,
+            "scenario_name": "Hypothermia",
+            "introduction": "Hypothermia occurs when your body loses heat faster than it can produce heat, causing a dangerously low body temperature.",
+            "symptoms & causes": [
+                "shivering",
+                "slurred speech",
+                "slow, shallow breathing",
+                "weak pulse",
+                "clumsiness",
+                "drowsiness",
+                "confusion",
+                "loss of consciousness"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Call 911 or local emergency services immediately."},
+                {"step_number": 2, "step_description": "Move the person to a warmer environment."},
+                {"step_number": 3, "step_description": "Remove any wet clothing and replace with dry blankets or clothing."},
+                {"step_number": 4, "step_description": "Warm the person gradually, starting with the body core (chest, neck, head, and groin)."},
+                {"step_number": 5, "step_description": "Provide warm beverages if the person is conscious and able to swallow."},
+                {"step_number": 6, "step_description": "Monitor their condition until help arrives."}
+            ]
+        },
+        {
+            "scenario_id": 10,
+            "scenario_name": "Asthma Attack",
+            "introduction": "An asthma attack is a sudden worsening of asthma symptoms caused by the tightening of muscles around the airways (bronchospasm).",
+            "symptoms & causes": [
+                "severe shortness of breath",
+                "chest tightness",
+                "coughing",
+                "wheezing",
+                "difficulty speaking",
+                "blue lips or fingernails"
+            ],
+            "detailed_steps": [
+                {"step_number": 1, "step_description": "Help the person sit up and stay calm."},
+                {"step_number": 2, "step_description": "Assist them in using their quick-relief inhaler."},
+                {"step_number": 3, "step_description": "If symptoms do not improve within a few minutes, call 911 or local emergency services."},
+                {"step_number": 4, "step_description": "Monitor their condition until help arrives."},
+                {"step_number": 5, "step_description": "Encourage slow, deep breathing."}
+            ]
+        }
+    ]
+}

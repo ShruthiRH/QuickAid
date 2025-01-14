@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Chatbot</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Chatbot</h1>
+        <form id="chatbot-form">
+            <textarea id="message" placeholder="Describe your symptoms here..."></textarea>
+            <button type="button" onclick="sendMessage()">Send</button>
+            <button type="button" onclick="startVoiceRecognition()">Record Voice</button>
+        </form>
+        <div id="response" class="response"></div>
+    </div>
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById('message').value;
+            const responseDiv = document.getElementById('response');
+
+            if (!message.trim()) {
+                responseDiv.innerHTML = '<p>Please enter a message.</p>';
+                return;
+            }
+
+            try {
+                const response = await fetch('/chatbot', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok.');
+                }
+
+                const data = await response.json();
+
+                if (data.introduction && data.detailed_steps) {
+                    let stepsHTML = '<ul>';
+                    data.detailed_steps.forEach(step => {
+                        stepsHTML += `<li>${step}</li>`;
+                    });
+                    stepsHTML += '</ul>';
+                    responseDiv.innerHTML = `<h2>${data.introduction}</h2>${stepsHTML}`;
+                } else {
+                    responseDiv.innerHTML = `<p>${data.message}</p>`;
+                }
+            } catch (error) {
+                responseDiv.innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+
+        async function startVoiceRecognition() {
+            const responseDiv = document.getElementById('response');
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = 'en-US';
+
+            recognition.onresult = async function(event) {
+                const voiceInput = event.results[0][0].transcript;
+                document.getElementById('message').value = voiceInput;
+                sendMessage();
+            };
+
+            recognition.onerror = function(event) {
+                responseDiv.innerHTML = `<p>Error: ${event.error}</p>`;
+            };
+
+            recognition.start();
+        }
+    </script>
+</body>
+</html>
